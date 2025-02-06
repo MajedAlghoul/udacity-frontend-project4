@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Article Analyzer</title>
+  </head>
+
+  <body>
+    <div id="popup-blur">
+      <div id="popup-card" class="results-boxes">
+        <div id="about-title-container">
+          <div id="filler-div"></div>
+          <div id="about-title">About</div>
+          <button id="x-button">
+            <div id="x-button-holder"></div>
+          </button>
+        </div>
+        <div id="about-body">
+          <div id="about-upper-body">
+            <div id="about-logo-holder" class="logo-holders"></div>
+            <div id="app-version">V 1.0</div>
+          </div>
+          <div id="about-bottom-body">
+            <div class="results-boxes about-links-containers">
+              <div>This tool is possible thanks to Diffbot.com</div>
+              <a href="https://diffbot.com"><div class="go-logo"></div></a>
+            </div>
+            <div class="results-boxes about-links-containers">
+              <div>Discover more on github</div>
+              <a href="https://github.com/majedalghoul">
+                <div class="go-logo"></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div id="logo-holder" class="logo-holders"></div>
+      <div id="form-holder-1">
+        <form id="urlForm">
+          <input
+            id="name"
+            type="text"
+            name="url"
+            placeholder="Enter URL"
+            required
+          />
+          <button id="submitButton" type="submit">Analyze</button>
+        </form>
+      </div>
+      <div class="nav-holder">
+        <button id="about-button">About</button>
+        <button id="mode-button"></button>
+      </div>
+    </header>
+
+    <main>
+      <section id="form-holder-2"></section>
+      <section id="results-section">
+        <h2 id="results-title">Article Title</h2>
+        <div id="results-grid">
+          <div id="results-text" class="results-boxes">
+            Text snippet of the article...
+          </div>
+          <div class="results-stats results-boxes">
+            <div class="results-stats-title">Polarity</div>
+            <div class="results-stats-content">
+              <p class="results-stats-1" id="results-stats-polarity">Label</p>
+              <p class="results-stats-2" id="results-stats-polarity-percent">
+                Confidence
+              </p>
+            </div>
+          </div>
+          <div class="results-stats results-boxes">
+            <div class="results-stats-title">Field</div>
+            <div class="results-stats-content">
+              <p class="results-stats-1" id="results-stats-field">Field Name</p>
+              <p class="results-stats-2" id="results-stats-field-percent">
+                Confidence
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-containers">
+        <p>Article Polarity Analyzer</p>
+        <p>© 2025 Majed Alghoul</p>
+      </div>
+      <div class="footer-containers">
+        <a href="https://majedalghoul.github.io/">My Portfolio</a>
+        <a href="https://udacity.com">Udacity</a>
+      </div>
+    </footer>
+  </body>
+</html>

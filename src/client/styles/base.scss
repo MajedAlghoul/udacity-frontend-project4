@@ -1,0 +1,90 @@
+$light-theme: (
+    layer0: (
+        245,
+        245,
+        245
+    ),
+    layer1: (
+        253,
+        253,
+        253
+    ),
+    text-color0: (
+        0,
+        0,
+        0
+    ),
+    text-color1: (
+        15,
+        15,
+        15
+    ),
+    cta-text: (
+        255,
+        255,
+        255
+    )
+);
+
+$dark-theme: (
+    layer0: (
+        31,
+        31,
+        31
+    ),
+    layer1: (
+        44,
+        44,
+        44
+    ),
+    text-color0: (
+        255,
+        255,
+        255
+    ),
+    text-color1: (
+        143,
+        143,
+        143
+    ),
+    cta-text: (
+        0,
+        0,
+        0
+    )
+);
+
+@mixin theme-properties($theme) {
+    @each $key, $value in $theme {
+        --#{$key}: #{$value};
+    }
+}
+:root {
+    @include theme-properties($dark-theme);
+}
+
+[data-theme="light"] {
+    @include theme-properties($light-theme);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(var(--layer0));
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}

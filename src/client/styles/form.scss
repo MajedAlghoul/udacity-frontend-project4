@@ -1,0 +1,41 @@
+form {
+    height: auto;
+    position: relative;
+    width: 600px;
+}
+
+input {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 16px;
+    font-size: 16px;
+    border-radius: 12px;
+    height: 42px;
+    border: 1px solid rgba(var(--text-color1), 0.05);
+    background-color: rgb(var(--layer1));
+    color: rgb(var(--text-color0));
+    box-shadow: inset 0px 4px 20px rgba(var(--cta-text), 0.25);
+}
+
+#submitButton {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    border-radius: 8px;
+    height: 26px;
+    background-color: rgb(var(--text-color0));
+    font-size: 12px;
+    color: rgb(var(--cta-text));
+    cursor: pointer;
+    border: none;
+}
+
+@media (max-width: 976px) {
+    form {
+        margin: 0 20px;
+    }
+    input {
+        border: 1px solid rgba(var(--text-color1), 0.1);
+        box-shadow: 0px 4px 20px rgba(var(--cta-text), 0.25);
+    }
+}
